@@ -11,12 +11,9 @@ class Routes extends Component {
     super(props)
   }
 
-
-
   render() {
     return (
       <Switch>
-        {/* Routes placed here are available to all visitors */}
         <Route exact path="/findFriends" component={FindFriends} />
         <Route exact path="/cardCollection" component={CardCollection} />
         <Route exact path="/appComponent" component={AppComponent} />
@@ -26,6 +23,4 @@ class Routes extends Component {
   }
 }
 
-// The `withRouter` wrapper makes sure that updates are not blocked
-// when the url changes
 export default Routes
