@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
+import CardCollection from './CardCollection'
+import FindFriends from './FindFriends'
+import Home from './Home'
+import AppComponent from './AppComponent'
 
 
 class Routes extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
 
@@ -13,9 +17,10 @@ class Routes extends Component {
     return (
       <Switch>
         {/* Routes placed here are available to all visitors */}
-        <Route path="/link1" component={Login} />
-        <Route path="/link2" component={Signup} />
-        <Route component = { Login } />
+        <Route exact path="/findFriends" component={FindFriends} />
+        <Route exact path="/cardCollection" component={CardCollection} />
+        <Route exact path="/appComponent" component={AppComponent} />
+        <Route component = { Home } />
       </Switch>
     )
   }
