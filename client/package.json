@@ -4,6 +4,8 @@
   "private": true,
   "proxy": "http://localhost:5000/",
   "dependencies": {
+    "enzyme": "^3.3.0",
+    "jest": "^23.4.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
