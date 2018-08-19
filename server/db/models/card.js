@@ -4,6 +4,7 @@ const db = require('../db')
 const Card = db.define('card', {
     id: {
         type: Sequelize.UUID,
+        primaryKey: true,
         defaultValue: Sequelize.UUIDV4
     },
     type: {
