@@ -1,5 +1,5 @@
 {
-  "name": "example-create-react-app-express",
+  "name": "stick-figure-animals",
   "version": "1.0.0",
   "scripts": {
     "client": "cd client && yarn start",
@@ -10,7 +10,8 @@
     "chai": "^4.1.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "express": "^4.16.2"
+    "express": "^4.16.3",
+    "sequelize": "^4.38.0"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
