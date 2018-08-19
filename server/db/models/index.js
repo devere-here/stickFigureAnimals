@@ -2,10 +2,11 @@ const User = require('./user'),
   Card = require('./card'),
   Post = require('./post')
 
-User.belongsToMany(User, {through: 'friendship'})
-Card.belondsTo(User)
+User.belongsToMany(User, {as: 'friend1', through: 'friendship'})
+User.belongsToMany(User, {as: 'friend2', through: 'friendship'})
+Card.belongsTo(User)
 User.hasMany(Card)
-Post.belondsTo(User)
+Post.belongsTo(User)
 User.hasMany(Post)
 
 

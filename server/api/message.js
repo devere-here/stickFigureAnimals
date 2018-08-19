@@ -1,5 +1,6 @@
 const router = require('express').Router()
 const { Message } = require('../db/models')
+module.exports = router
 
 router.get('/', async (req, res, next) => {
     const message = await Message.findAll({

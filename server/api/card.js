@@ -1,5 +1,6 @@
 const router = require('express').Router()
 const { Card } = require('../db/models')
+module.exports = router
 
 router.get('/:id', async (req, res, next) => {
     const cards = await Card.findAll({
